@@ -1,1 +1,643 @@
-
+{
+  "id": "aa4466f8-f682-4c9d-9422-97f7a302beec",
+  "version": "2.0",
+  "name": "Autotest_apteka.ru",
+  "url": "https://apteka.ru",
+  "tests": [{
+    "id": "71e4f145-d12b-4e55-b15b-104a7a31dd75",
+    "name": "main",
+    "commands": [{
+      "id": "fbb7aaed-eb9c-4f19-aded-e973797f2490",
+      "comment": "",
+      "command": "open",
+      "target": "https://apteka.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cc12a40-5be1-46e8-a43f-ab7c175e9fd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeedd635-f97a-46c7-9987-3103a960d432",
+      "comment": "Дождаться отображения лого сайта",
+      "command": "waitForElementPresent",
+      "target": "css=.icon--logo",
+      "targets": [
+        ["css=.icon--logo", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7b647940-c7cd-4d6a-900b-6589ff1f7035",
+      "comment": "Дождаться отображения поисковой строки",
+      "command": "waitForElementPresent",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a1b7e848-edd9-4785-96c8-fa6087a8401f",
+      "comment": "",
+      "command": "click",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4427dde6-b419-4e08-8c71-fefb706cc124",
+      "comment": "",
+      "command": "type",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "дезодарант интенсивного действия"
+    }, {
+      "id": "552bcb9f-d0b7-4ac3-89ea-142408155915",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ae53b383-733b-4dc6-9a5b-c3e79006586a",
+      "comment": "Дождаться кнопки \"В корзину\"",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[5]/div/button",
+      "targets": [
+        ["css=.PurchaseButton:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[5]/div[3]/div[2]/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f36449fa-46c4-4f5b-b5e8-8895e3f488ad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/button",
+      "targets": [
+        ["css=.PurchaseButton:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[5]/div[3]/div[2]/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ae205e6-cfde-4848-8c12-16355c9814af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon--nav_cart",
+      "targets": [
+        ["css=.icon--nav_cart", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4c3caa-6c92-4154-998f-b7584064622d",
+      "comment": "Дождаться кнопки \"Удалить\"",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Удалить')]",
+      "targets": [
+        ["css=.CartItem__remove > .link", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/div[2]/ul/li/div/div/div/div[6]/span", "xpath:idRelative"],
+        ["xpath=//div[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a046c275-53f5-421c-a3db-d82ca34e6518",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Удалить')]",
+      "targets": [
+        ["css=.CartItem__remove > .link", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/div[2]/ul/li/div/div/div/div[6]/span", "xpath:idRelative"],
+        ["xpath=//div[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6997599-ca17-4921-8691-85bb59933b7c",
+      "comment": "Не стала закрывать сайт после отработанного скрипта, иначе товар не удалится из корзины полностью",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7322cc32-121e-4ff3-91ed-3426a5204bc1",
+    "name": "filters",
+    "commands": [{
+      "id": "4fe83aa1-be87-413d-8287-4ddb402702b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://apteka.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0faff886-dd78-4ef4-8ef9-7fd0a35a3357",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3013ed0-4a0f-4fe7-8520-746e5f34bbb9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//b[contains(.,'Медицинские приборы')]",
+      "targets": [
+        ["css=li:nth-child(9) b", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/div/div/div/div[2]/div/ul/li[9]/a/b", "xpath:idRelative"],
+        ["xpath=//li[9]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Медицинские приборы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19cf8756-6028-4591-aa04-e3c98b563691",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аппликаторы",
+      "targets": [
+        ["linkText=Аппликаторы", "linkText"],
+        ["css=.SidebarCategoriesList li:nth-child(4) > a", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/div/div/div/div[3]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/category/devices/applicator/')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Аппликаторы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee86fdd9-f380-4ef4-a086-d352f0672e4e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fe84b58-e08a-4fb2-af99-41fb19e928dc",
+      "comment": "Дождаться отображения фильтра \"Бренд\"",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div[2]/div",
+      "targets": [
+        ["css=.sidebar__inner .SidebarFilter:nth-child(2) > .SidebarFilter__label", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7fbda71a-ee2a-442e-823d-6a3063605925",
+      "comment": "Кликнуть по фильтру \"Бренд\"",
+      "command": "click",
+      "target": "xpath=//div[2]/div[2]/div",
+      "targets": [
+        ["css=.sidebar__inner .SidebarFilter:nth-child(2) > .SidebarFilter__label", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7946b8db-c1b0-4fe4-b1bf-254d9d548f7d",
+      "comment": "Выбрать бренд",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div[4]",
+      "targets": [
+        ["css=.sidebar__inner .SidebarFilter:nth-child(2) .SidebarFilterCheckboxes__box:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a8d828-a7ad-43c7-9296-e5a1efd8b7e6",
+      "comment": "Дождаться появления карточки товара",
+      "command": "waitForElementPresent",
+      "target": "xpath=(//a[contains(@href, '/product/applikator-kovrik-massazhnyjvalik-akupunkturnyj-fosta-art-f-0107-61b33cc6e9219b8f33b9b715/')])[2]",
+      "targets": [
+        ["css=.catalog-card:nth-child(1) > .catalog-card__link", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[3]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/product/applikator-kovrik-massazhnyjvalik-akupunkturnyj-fosta-art-f-0107-61b33cc6e9219b8f33b9b715/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "fce9db97-4f78-43fe-9113-ad2c87083239",
+      "comment": "Кликнуть по кнопке \"Купить\" в карточке товара",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Купить')]",
+      "targets": [
+        ["css=.catalog-card:nth-child(1) .light-button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[3]/div[3]/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2748143d-5d37-4239-a93b-4ba282da07d7",
+      "comment": "Дождаться появления карточки товара",
+      "command": "waitForElementPresent",
+      "target": "xpath=(//a[contains(@href, '/product/applikator-kovrik-massazhnyj-akupunkturnyj-fosta-art-f-0102-5e326d1865b5ab000165373f/')])[2]",
+      "targets": [
+        ["css=.catalog-card:nth-child(2) > .catalog-card__link", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[3]/div[3]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/product/applikator-kovrik-massazhnyj-akupunkturnyj-fosta-art-f-0102-5e326d1865b5ab000165373f/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7b5592d3-4682-40fe-858e-6191553334f0",
+      "comment": "Кликнуть по кнопке \"Купить\" в карточке товара",
+      "command": "click",
+      "target": "xpath=//div[2]/div[4]/button",
+      "targets": [
+        ["css=.catalog-card:nth-child(2) .light-button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[3]/div[3]/div[2]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d9d6065-0b7d-4c34-a3ec-580f3e6b66cf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1938f97f-9a12-4364-9ee5-f21820c25dae",
+    "name": "cart",
+    "commands": [{
+      "id": "2a629fce-6062-43c7-ab20-18c5cc915687",
+      "comment": "",
+      "command": "open",
+      "target": "https://apteka.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e439e80-e870-4e85-bc29-354bb99a2f46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd051d2d-0f63-468e-9875-129c5e1dcb94",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f96046f1-2c7f-4b45-9430-eacf86e7980d",
+      "comment": "",
+      "command": "click",
+      "target": "id=apteka-search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf3cd4fe-f840-4551-90e3-860e8a1f3704",
+      "comment": "",
+      "command": "type",
+      "target": "id=apteka-search",
+      "targets": [],
+      "value": "Эсвицин лосьон-тоник 250 мл"
+    }, {
+      "id": "bfa44e7b-cc35-427a-a511-64a78db79002",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=apteka-search",
+      "targets": [
+        ["id=apteka-search", "id"],
+        ["name=q", "name"],
+        ["css=#apteka-search", "css:finder"],
+        ["xpath=//input[@id='apteka-search']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/div/div[3]/div/form/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4ac407a2-dcc0-4495-aeca-a366509e0b4a",
+      "comment": "Дождаться отображения кнопки \"В корзину\"",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[5]/div/button",
+      "targets": [
+        ["css=.PurchaseButton:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[5]/div[3]/div[2]/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "ad654afe-66e7-43cc-9862-f4f3dea066bf",
+      "comment": "Кликнуть по кнопке \"В корзину\"",
+      "command": "click",
+      "target": "xpath=//div[5]/div/button",
+      "targets": [
+        ["css=.PurchaseButton:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div/div[5]/div[3]/div[2]/div/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f0aaf34-c195-4f62-80f6-af371ab7f2e1",
+      "comment": "Дождаться отображения иконки корзины",
+      "command": "waitForElementPresent",
+      "target": "css=.icon--nav_cart",
+      "targets": [
+        ["css=.icon--nav_cart", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a61eede4-0200-407c-af4e-184ca8be86fc",
+      "comment": "Кликнуть на иконку корзины",
+      "command": "click",
+      "target": "css=.icon--nav_cart",
+      "targets": [
+        ["css=.icon--nav_cart", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea12e068-d0b9-42e3-b5d7-769252db91f2",
+      "comment": "Дождаться отображения кнопки + для суммирования количества товара",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[4]/div/div/div/button[2]",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/div[2]/ul/li/div/div/div/div[4]/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "45e017ab-90b7-44a7-a9dd-3d1323de0a99",
+      "comment": "Кликнуть по кнопке + для суммирования количества товара",
+      "command": "click",
+      "target": "xpath=//div[4]/div/div/div/button[2]",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/div[2]/ul/li/div/div/div/div[4]/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad652847-9a3f-423c-8f37-161ee1aac933",
+      "comment": "Дождаться отображения кнопки \"Очистить\"",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,' Очистить')]",
+      "targets": [
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Очистить')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0125f749-d9b2-4261-a17d-85d6e6ba2864",
+      "comment": "Кликнуть по кнопке \"Очистить\"",
+      "command": "click",
+      "target": "xpath=//span[contains(.,' Очистить')]",
+      "targets": [
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Очистить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4f3f50-2d85-4e4c-953e-1a62fe18c377",
+      "comment": "Дождаться сообщения о пустой корзине",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div[3]/div/div/div",
+      "targets": [
+        ["css=.CartItemsList__empty", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5ab08e36-2e42-481c-958e-f4564a773052",
+      "comment": "Не стала закрывать сайт после отработанного скрипта, иначе товар не удалится из корзины полностью",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9dedcfd8-007d-4862-89c3-4c4dfd67bc30",
+    "name": "city",
+    "commands": [{
+      "id": "fb0eb688-ab61-42a5-854f-23b362cd4a09",
+      "comment": "",
+      "command": "open",
+      "target": "https://apteka.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5167729-40a4-4517-81e2-577eff9d1223",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3b7ed06-9a54-4147-a825-6da36ba51870",
+      "comment": "Дождаться отображения элемента с выбором города",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Москва')]",
+      "targets": [
+        ["css=.HeaderCity > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Москва')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "995c9f19-53e0-4c4a-9d5c-460adb9daa14",
+      "comment": "Кликнуть по элементу с выбором города",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Москва')]",
+      "targets": [
+        ["css=.HeaderCity > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/header/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Москва')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "382a1ff1-a397-400a-877e-210d6469f312",
+      "comment": "Дождаться загрузки дроп даун меню списка городов",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[3]/div/div/div[2]/div/div/div/div/ol/li[4]",
+      "targets": [
+        ["css=.TownSelector-option:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div[5]/div/div[3]/div/div/div[2]/div/div/div/div/ol/li[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div/ol/li[4]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d76616ba-b4cc-4e2b-a3fa-4f27a5786834",
+      "comment": "Кликнуть по городу",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div[2]/div/div/div/div/ol/li[4]",
+      "targets": [
+        ["css=.TownSelector-option:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div[5]/div/div[3]/div/div/div[2]/div/div/div/div/ol/li[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div/ol/li[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7dbee1-c85f-4a69-911b-f8cd243dc1b4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ce94240c-7a96-4151-80f3-31619ee1adb6",
+    "name": "socials",
+    "commands": [{
+      "id": "2d4540a8-62b0-46c8-8a6a-cc4b58888026",
+      "comment": "",
+      "command": "open",
+      "target": "https://apteka.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5173a0e4-ae73-43f3-9c4e-237eca93dcbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "378769f2-df54-41b8-9c57-637d0a723a05",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1244)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cef70972-6228-495f-88cf-6e539163d075",
+      "comment": "Дождаться иконки соц сети ВК",
+      "command": "waitForElementPresent",
+      "target": "css=.icon--vk > use",
+      "targets": [
+        ["css=.icon--vk > use", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5233927f-a0a2-4e6b-9618-e47e3a70853c",
+      "comment": "Нажать на иконку соц сети ВК",
+      "command": "click",
+      "target": "css=.icon--vk > use",
+      "targets": [
+        ["css=.icon--vk > use", "css:finder"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2405",
+      "windowTimeout": 2000
+    }, {
+      "id": "8c0890b1-35f7-43ad-83d5-20423d78783b",
+      "comment": "Дождаться иконки стора",
+      "command": "waitForElementPresent",
+      "target": "css=.AppStoresGroup:nth-child(2) .icon--store-huawei > use",
+      "targets": [
+        ["css=.AppStoresGroup:nth-child(2) .icon--store-huawei > use", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "414dc398-31a0-46a0-9e32-35fcc01c2ed3",
+      "comment": "Нажать на иконку стора",
+      "command": "click",
+      "target": "css=.AppStoresGroup:nth-child(2) .icon--store-huawei > use",
+      "targets": [
+        ["css=.AppStoresGroup:nth-child(2) .icon--store-huawei > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bbb55c-7e07-4bdf-bb41-6dcaf89fa716",
+      "comment": "Дождаться элемента с телефоном",
+      "command": "waitForElementPresent",
+      "target": "linkText=8 800 700 88 88",
+      "targets": [
+        ["linkText=8 800 700 88 88", "linkText"],
+        ["css=address > a", "css:finder"],
+        ["xpath=//a[contains(text(),'8 800 700 88 88')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[3]/div/div/div/div/div[3]/address/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:8 800 700 88 88')]", "xpath:href"],
+        ["xpath=//address/a", "xpath:position"],
+        ["xpath=//a[contains(.,'8 800 700 88 88')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e279c29a-1379-4d52-ba3a-28035c27dcda",
+      "comment": "Кликнуть по элементу с телефоном",
+      "command": "click",
+      "target": "linkText=8 800 700 88 88",
+      "targets": [
+        ["linkText=8 800 700 88 88", "linkText"],
+        ["css=address > a", "css:finder"],
+        ["xpath=//a[contains(text(),'8 800 700 88 88')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[3]/div/div/div/div/div[3]/address/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:8 800 700 88 88')]", "xpath:href"],
+        ["xpath=//address/a", "xpath:position"],
+        ["xpath=//a[contains(.,'8 800 700 88 88')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09db7af1-d1b5-430e-921a-431e9f7b96f0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8039ab35-e0df-4721-95a2-4362ef28056d",
+      "comment": "Хотелось сделать ловушку джокера, но не получилось :С",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "72e9cbd3-1aa1-430c-a6c8-584e1d0e0dbc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71e4f145-d12b-4e55-b15b-104a7a31dd75"]
+  }],
+  "urls": ["https://apteka.ru/"],
+  "plugins": []
+}
