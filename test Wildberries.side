@@ -1,0 +1,690 @@
+{
+  "id": "64e58f3e-84f8-4bba-b8ad-0c59005f5a8b",
+  "version": "2.0",
+  "name": "Testovy test Wildberries",
+  "url": "https://www.wildberries.ru/",
+  "tests": [{
+    "id": "4281d303-041a-495e-9f1d-41ed0d27d803",
+    "name": "Order_test (log in)",
+    "commands": [{
+      "id": "61f20cd3-bc9a-4c3a-bc16-8157aa159cc3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d676a87e-f24c-4743-a816-f0593c126de6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85b25c5c-0f18-4072-bf31-efdc62004150",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Корзина')]",
+      "targets": [
+        ["linkText=Корзина", "linkText"],
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c9b9125d-1797-4420-8f99-8b265cd21f19",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Корзина')]",
+      "targets": [
+        ["linkText=Корзина", "linkText"],
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdf07841-a1e8-48a0-ac35-9ef4fd0ad313",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Заказать')]",
+      "targets": [
+        ["name=ConfirmOrderByRegisteredUser", "name"],
+        ["css=.b-btn-do-order", "css:finder"],
+        ["xpath=//button[@name='ConfirmOrderByRegisteredUser']", "xpath:attributes"],
+        ["xpath=//form[@id='basketForm']/div[2]/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Заказать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0392171-1965-4a99-b280-fcd65e38d153",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='basketForm']/div/div[2]/div[2]",
+      "targets": [
+        ["css=.basket-delivery__choose-address", "css:finder"],
+        ["xpath=//form[@id='basketForm']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "78b03763-2762-4866-9ab8-a65744b70819",
+    "name": "Cart_test (log in)",
+    "commands": [{
+      "id": "832581e9-a8f0-4518-ac0b-239216ab0c45",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b6558fe-b197-47eb-bef8-041161500e35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "988000ac-4cde-4e72-9aba-6668729193a4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Корзина')]",
+      "targets": [
+        ["linkText=Корзина", "linkText"],
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "667563ee-b489-4867-9a36-e601042bd96d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Корзина')]",
+      "targets": [
+        ["linkText=Корзина", "linkText"],
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ff02122-4671-470f-9226-5dc25eab19d4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[10]",
+      "targets": [
+        ["css=.count__plus", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//form[@id='basketForm']/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8358ff1-a523-4486-ba77-35e68c0d2448",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Удалить')]",
+      "targets": [
+        ["css=.btn__del > span", "css:finder"],
+        ["xpath=//form[@id='basketForm']/div/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ed9edbf7-4a96-429a-a91a-83b98a385dd0",
+    "name": "Catalog_test",
+    "commands": [{
+      "id": "f68aceea-8836-400d-8089-f24ddc4b4ce5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "714e1111-2341-45c5-b99a-3f6e2ce9311a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "809a86e3-400d-451f-82f7-3b2fa5e59be4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.nav-element__burger",
+      "targets": [
+        ["css=.nav-element__burger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0e401636-b3ab-44ad-9343-94cdf2a67dc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-element__burger",
+      "targets": [
+        ["css=.nav-element__burger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b43c4c53-7e39-4d0c-90c4-711b98bb293c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Электроника')]",
+      "targets": [
+        ["linkText=Электроника", "linkText"],
+        ["css=.menu-burger__main-list-link--4830", "css:finder"],
+        ["xpath=//a[contains(text(),'Электроника')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.wildberries.ru/catalog/elektronika')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Электроника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed71fbf-0e9b-481b-85cd-2b45af45cac7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Ноутбуки и компьютеры')]",
+      "targets": [
+        ["linkText=Ноутбуки и компьютеры", "linkText"],
+        ["css=li:nth-child(7) > .j-menu-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки и компьютеры')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div/div/div/ul[2]/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/elektronika/noutbuki-periferiya')]", "xpath:href"],
+        ["xpath=//ul[2]/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки и компьютеры')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93e5122b-9957-4556-b8f5-e5e239fcba7f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=body-layout",
+      "targets": [
+        ["id=body-layout", "id"],
+        ["css=#body-layout", "css:finder"],
+        ["xpath=//main[@id='body-layout']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "03bfe85a-7620-48dd-941e-975594f41663",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://www.wildberries.ru/catalog/119184797/detail.aspx?targetUrl=GP')]",
+      "targets": [
+        ["css=#c119184797 .product-card__main", "css:finder"],
+        ["xpath=//div[@id='c119184797']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.wildberries.ru/catalog/119184797/detail.aspx?targetUrl=GP')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd9e0f4-c0d3-43f9-9422-776165c9c590",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=div:nth-child(2) > .order > .btn-main:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > .order > .btn-main:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='64987c2f-e855-6868-0c6b-07f5c265e6bd']/div[3]/div[10]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "05be1e26-2c79-42d0-8d4b-ebc2556a136e",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .order > .btn-main:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > .order > .btn-main:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='47cb2645-7063-0908-d836-67cfab5f933c']/div[3]/div[10]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fcfc418-2c36-4699-aba9-2557954ca6f1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Перейти в корзину')])[2]",
+      "targets": [
+        ["linkText=Перейти в корзину", "linkText"],
+        ["css=div:nth-child(2) > .order > .j-go-to-basket", "css:finder"],
+        ["xpath=(//a[contains(text(),'Перейти в корзину')])[2]", "xpath:link"],
+        ["xpath=//div[@id='878fcf8d-bf1c-c7b8-634d-09998947b939']/div[3]/div[10]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk/basket')])[113]", "xpath:href"],
+        ["xpath=//div[10]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4e66f100-faef-44b2-a0e1-c2dbf7cb68b7",
+    "name": "Main_test",
+    "commands": [{
+      "id": "cb36c5a6-3526-49ec-8b92-0439b90d4dbf",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ce96d3e-fea1-4fdc-a245-6a29509668c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9b6fe67-c0b0-4cca-bbce-0eae1b726d84",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Адреса')]",
+      "targets": [
+        ["linkText=Адреса", "linkText"],
+        ["css=.j-item-addresses > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/besplatnaya-dostavka?desktop=1#terms-delivery')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Адреса')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "76a206a9-60d9-4b2e-abf9-03c43d913529",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Войти')]",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.j-main-login", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/security/login?returnUrl=https%3A%2F%2Fwww.wildberries.ru%2F')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "530d76a7-2f37-4b0c-a5f6-bc6e3473a18a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Корзина')]",
+      "targets": [
+        ["linkText=Корзина", "linkText"],
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "45e81a8d-870d-415c-8383-92e76edfd93a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.nav-element__logo > img",
+      "targets": [
+        ["css=.nav-element__logo > img", "css:finder"],
+        ["xpath=//img[@alt='Wildberries']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9906b722-90a9-4953-8ee6-8bb4c73c750a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBlock']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5ac12f7f-e131-4c14-993f-0b5c973d96fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBlock']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61330a8a-25e2-40d8-b31e-40c448b75019",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBlock']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "джинсы"
+    }, {
+      "id": "a390b2b8-0818-4ba2-9714-abc15982ee5d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e145315a-f679-47cf-8a41-2393ede524a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1900)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e334693-9428-433e-82d5-d5930589cf3c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Следующая страница')]",
+      "targets": [
+        ["linkText=Следующая страница", "linkText"],
+        ["css=.pagination-next", "css:finder"],
+        ["xpath=//a[contains(text(),'Следующая страница')]", "xpath:link"],
+        ["xpath=//div[@id='catalog']/div/div/div[3]/div[6]/div/div/a[7]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/catalog/0/search.aspx?sort=popular&search=%D0%B4%D0%B6%D0%B8%D0%BD%D1%81%D1%8B&page=2')])[2]", "xpath:href"],
+        ["xpath=//div/a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Следующая страница')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5bbbb61-91da-4f61-b06b-c61ac310c443",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1900)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "43a0b224-0800-4d49-bea5-839516923569",
+    "name": "Account_test (log in)",
+    "commands": [{
+      "id": "13444615-5b27-45b2-b498-bcd0b3ea5a02",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7a37617-e3f7-4e70-a628-12670feff748",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45c92bf2-2a64-4d82-9d0d-7c200bd41f0c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Профиль')]",
+      "targets": [
+        ["linkText=Профиль", "linkText"],
+        ["css=.j-item-profile > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профиль')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d6d71780-8f07-40cb-9cf4-e99e00b2055f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Профиль')]",
+      "targets": [
+        ["linkText=Профиль", "linkText"],
+        ["css=.j-item-profile > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профиль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80a6a3ee-ac3a-4f8e-be9b-0c4f5c2fd8c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/lk/details')])[8]",
+      "targets": [
+        ["css=.lk-item > a", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk/details')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fd32806-89ee-4b16-aff2-03d16a04d5b5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//section/div",
+      "targets": [
+        ["css=.personal-data__top-wrap", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/section/div", "xpath:idRelative"],
+        ["xpath=//section/div", "xpath:position"]
+      ],
+      "value": "Не указано"
+    }, {
+      "id": "dc79face-c7b9-4360-a01b-a970fd6d37de",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='app']/div[2]/div/div/section/ul/li[2]/div",
+      "targets": [
+        ["css=.personal-data__item--phone > .personal-data__content", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div/section/ul/li[2]/div", "xpath:idRelative"],
+        ["xpath=//section/ul/li[2]/div", "xpath:position"]
+      ],
+      "value": "+7 (906) 352-71-44"
+    }, {
+      "id": "7bc3c74f-0784-4d6f-b776-ff796faf35ac",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[9]",
+      "targets": [
+        ["css=.personal-data__edit--name", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div[2]/div/div/section/div/div/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e82ba36-4a66-4837-865b-43375f883a17",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Имя')]",
+      "targets": [
+        ["css=.form-list__item", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Имя')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a90d8b8-b532-438b-9420-2e0c7ec7d2a0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='Item.FirstName']",
+      "targets": [
+        ["id=Item.FirstName", "id"],
+        ["name=Item.FirstName", "name"],
+        ["css=#Item\\.FirstName", "css:finder"],
+        ["xpath=//input[@id='Item.FirstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Настя"
+    }, {
+      "id": "6f322ea1-7f5d-4881-9c14-5dbd59d366ea",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Сохранить')]",
+      "targets": [
+        ["css=.btn-main", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1772a6cb-f1ad-4fdb-9c3b-ed4b9ca9cd2a",
+    "name": "Retest_catalog_test_withrecording",
+    "commands": [{
+      "id": "11b56332-ddf3-4f08-9d43-d4d7881dc946",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wildberries.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44e133a4-88b9-498f-9aa6-b752d24e119a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ad99c35-e2bd-4a40-9423-971b3818aa6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .order > .btn-main:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > .order > .btn-main:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='47cb2645-7063-0908-d836-67cfab5f933c']/div[3]/div[10]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f236112d-591e-4e25-a657-ba9100cef20f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(2) > .order > .btn-main:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > .order > .btn-main:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='47cb2645-7063-0908-d836-67cfab5f933c']/div[3]/div[10]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27f45027-aa9e-40f4-80c5-5097612d912f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=div:nth-child(2) > .order > .btn-main:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > .order > .btn-main:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='47cb2645-7063-0908-d836-67cfab5f933c']/div[3]/div[10]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a230525d-7d67-4fd9-a4e2-1c74f23f3eaa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Профиль",
+      "targets": [
+        ["linkText=Профиль", "linkText"],
+        ["css=.j-item-profile > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профиль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e2acd46-3ac8-4adf-b33c-afb6c6382aec",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Профиль",
+      "targets": [
+        ["linkText=Профиль", "linkText"],
+        ["css=.j-item-profile > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профиль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc121246-5e03-4bf3-b670-cc580f23f4bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Профиль",
+      "targets": [
+        ["linkText=Профиль", "linkText"],
+        ["css=.j-item-profile > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/lk')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профиль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c1f343d-477d-416c-9e6e-4beb31d7f48f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.j-item-basket > .navbar-pc__link",
+      "targets": [
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0b9a097-5518-406e-b43a-08e6bc7704de",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.j-item-basket > .navbar-pc__link",
+      "targets": [
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8cce7c5-3d2e-4403-a639-de670eedda76",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.j-item-basket > .navbar-pc__link",
+      "targets": [
+        ["css=.j-item-basket > .navbar-pc__link", "css:finder"],
+        ["xpath=//div[@id='basketContent']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lk/basket')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aae24721-fcb8-44dc-b085-fdc5fca7682f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.wildberries.ru/"],
+  "plugins": []
+}
